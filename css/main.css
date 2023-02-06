@@ -1,0 +1,250 @@
+/* ubuntu-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ubuntu-v20-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/ubuntu-v20-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ubuntu-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ubuntu-v20-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/ubuntu-v20-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    bottom: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/********************** HEADER STYLE START ****************** */
+/********************** HEADER STYLE END ****************** */
+
+
+.main-header{
+    width: 100%;
+    background-color: #040f28;
+}
+
+
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header__logo{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #c4c4c4;
+}
+
+.site__nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.site__nav-item:not(:last-child){
+    margin-right: 50px;
+    
+}
+
+.site__nav-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #646464;
+}
+
+
+
+.site__nav-link:active{
+    color: #fff;
+}
+
+
+.register{
+    padding: 16px 32px;
+    border: 2px solid #C4C4C4;
+    border-radius: 87px;
+    color: #fff;
+}
+
+.humburger__btn{
+    display: none;
+}
+
+
+
+/************ HIDDEN HEADER START **********************/
+
+.hidden-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 93px;
+    padding-top: 30px;
+    background-color: #040f28;
+    transition: 0.5s;
+    transform: translateX(450%);
+}
+
+.hidden-header.show-header{
+    transform: translateX(0%);
+}
+
+.hidden__nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden__nav-item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.hidden__nav-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #646464;
+}
+
+/************ HIDDEN HEADER END **********************/
+
+
+/*************************** HEADER RESPONSIVE START ***********************/
+@media only screen and (max-width: 890px){
+    .site__nav{
+        display: none;
+    }
+    
+    .humburger__btn{
+        display: inline-block;
+    }
+}
+
+/*************************** HEADER RESPONSIVE END **********************/
+
+/********************** HEADER STYLE END ****************** */
+
+/*********************** HERO STYLE START ******************/
+
+.hero__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero__wrapper-info{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 120px;
+}
+
+.hero__wrapper-title{
+    width: 100%;
+    max-width: 470px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 74px;
+    color: #C4C4C4;
+}
+
+.hero__wrapper-desc{
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #646464;
+}
+
+.hero__wrapper-link{
+    display: inline-block;
+    padding: 16px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    background: #fc3867;
+    border-radius: 87px;
+    color: #FFFFFF;
+}
+
+/*********************** HERO STYLE END ******************/
+
+
+
