@@ -63,8 +63,8 @@ img{
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 ol,
@@ -85,7 +85,11 @@ a{
 
 .main-header{
     width: 100%;
+    padding-bottom: 30px;
     background-color: #040f28;
+    background-image: url("../images/heroline.png"), url("../images/heroline2.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 793px) calc(50% - 263px), calc(50% + 400px)  calc(50% + 300px);
 }
 
 
@@ -243,6 +247,77 @@ a{
     border-radius: 87px;
     color: #FFFFFF;
 }
+
+.hero__wrapper-img{
+    margin-right: 30px;
+}
+
+
+/********************** HERO RESPONSIVE START ********************** */
+@media only screen and (max-width: 1065px){
+    .hero__wrapper-img{
+        width: 100%;
+        max-width: 400px;
+        height: 550px;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .hero__wrapper-img{
+        width: 100%;
+        max-width: 380px;
+        height: 500px;
+        margin-right: 30px;
+    }
+
+    .hero__wrapper-info{
+        margin-top: 80px;
+    }
+
+    .hero__wrapper-title{
+        max-width: 330px;
+        margin-bottom: 18px;
+        font-size: 45px;
+        line-height: 60px;
+    }
+    
+    .hero__wrapper-desc{
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .hero__wrapper-link{
+        display: inline-block;
+        padding: 14px 25px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:720px){
+    .hero__wrapper{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__wrapper-info{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .hero__wrapper-title{
+        margin: 0 auto;
+    }
+
+    .hero__wrapper-img{
+        margin-right: 0px;
+    }
+}
+
+/********************** HERO RESPONSIVE END ********************** */
 
 /*********************** HERO STYLE END ******************/
 
