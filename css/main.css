@@ -329,6 +329,10 @@ a{
 
 /************************ MAIN STYLES START ******************* */
 
+.site-main{
+    background-color: #040f28;
+}
+
 /*********************** COUNT STYLE START ********************/
 .count{
     padding-top: 90px;
@@ -450,9 +454,201 @@ a{
     }
 }
 /********************* COUNT RESPONSIVE END ****************** */
-
 /*********************** COUNT STYLE END ********************/
 
+/************************ SERVICES STYLE START ****************** */
+
+.service{
+    margin-bottom: 110px;
+    padding-bottom: 110px;
+    padding-top: 150px;
+}
+
+.service__wrapper{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.service__wrapper-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 56px;
+}
+
+.service__wrapper-text{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.services__wrapper-title{
+    width: 100%;
+    max-width: 477px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.services__wrpapper-desc{
+    width: 100%;
+    max-width: 395px;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 180%;
+    color: #FFFFFF;
+}
+
+.services__wrapper-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services__wrapper-item{
+    position: relative;
+    width: 100%;
+    max-width: 308px;
+    padding-left: 65px;
+}
+
+.services__wrapper-item::before{
+    position: absolute;
+    display: inline-block;
+    content: url("../images/best-quality.svg");
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.services__wrapper-item:nth-child(1){
+    width: 100%;
+    max-width: 364px;
+    margin-right: 40px;
+    border-right: 1px solid #fff;
+}
+
+.services__wrapper-item:nth-child(2):before{
+    content: url("../images/excellent.svg");
+}
+
+.services__wrapper-item:nth-child(2){
+    width: 100%;
+    max-width: 381px;
+    border-right: 1px solid #fff;
+}
+
+.services__wrapper-item:nth-child(3):before{
+    content: url("../images/shipping.svg");
+}
+.services__wrapper-item--title{
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.services__wrapper-item--desc{
+    max-width: 243px;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 180%;
+    color: #FFFFFF;
+}
+
+
+/************************ SERVICES RESPONSIVE START *************************  */
+@media only screen and (max-width:956px){
+
+    .services__wrapper-title{
+        width: 100%;
+        max-width: 350px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .services__wrapper-item:nth-child(1){
+        margin-right: 20px;
+    }
+
+    .services__wrapper-item:nth-child(2){
+        padding-right: 15px;
+    }
+
+    .services__wrapper-item:nth-child(3){
+        width: 100%;
+        max-width: 381px;
+        margin-left: 30px;
+    }
+    
+   
+}
+
+@media only screen and (max-width: 800px){
+
+    .service__wrapper-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .services__wrapper-title{
+       margin-bottom: 20px;
+    }
+
+    .services__wrapper-list{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services__wrapper-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        padding-left: 0;
+    }
+
+    .services__wrapper-item::before{
+        bottom: 50%;
+        left: 44%;
+    }
+
+    .services__wrapper-item:nth-child(1){
+        border-right: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .services__wrapper-item:nth-child(2){
+        border-right: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .services__wrapper-item:nth-child(3) {
+        margin-left: 0px;
+    }
+}
+
+
+/************************ SERVICES RESPONSIVE END *************************  */
+
+/************************ SERVICES STYLE END ****************** */
 
 
 /************************ MAIN STYLES END ******************* */
