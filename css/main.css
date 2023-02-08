@@ -571,49 +571,49 @@ a{
 
 /************************ SERVICES RESPONSIVE START *************************  */
 @media only screen and (max-width:956px){
-
+    
     .services__wrapper-title{
         width: 100%;
         max-width: 350px;
         font-size: 30px;
         line-height: 40px;
     }
-
+    
     .services__wrapper-item:nth-child(1){
         margin-right: 20px;
     }
-
+    
     .services__wrapper-item:nth-child(2){
         padding-right: 15px;
     }
-
+    
     .services__wrapper-item:nth-child(3){
         width: 100%;
         max-width: 381px;
         margin-left: 30px;
     }
     
-   
+    
 }
 
 @media only screen and (max-width: 800px){
-
+    
     .service__wrapper-info{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-
+    
     .services__wrapper-title{
-       margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-
+    
     .services__wrapper-list{
         flex-direction: column;
         justify-content: center;
     }
-
+    
     .services__wrapper-item{
         display: flex;
         flex-direction: column;
@@ -624,22 +624,22 @@ a{
         padding-top: 50px;
         padding-left: 0;
     }
-
+    
     .services__wrapper-item::before{
         bottom: 50%;
         left: 44%;
     }
-
+    
     .services__wrapper-item:nth-child(1){
         border-right: 0;
         border-bottom: 1px solid #fff;
     }
-
+    
     .services__wrapper-item:nth-child(2){
         border-right: 0;
         border-bottom: 1px solid #fff;
     }
-
+    
     .services__wrapper-item:nth-child(3) {
         margin-left: 0px;
     }
@@ -649,6 +649,42 @@ a{
 /************************ SERVICES RESPONSIVE END *************************  */
 
 /************************ SERVICES STYLE END ****************** */
+
+/********************** OFFER STYLE START ***********************  */
+
+.offer{
+    margin-bottom: 110px;
+}
+
+.offer__info{
+    width: 100%;
+    max-width: 582px;
+    margin-right: auto;
+    margin-bottom: 72px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.offer__title{
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #fff;
+}
+
+.offer__desc{
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+}
+
+/********************** OFFER STYLE END ***********************  */
+
+
 
 
 /************************ MAIN STYLES END ******************* */
